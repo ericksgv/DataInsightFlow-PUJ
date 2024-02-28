@@ -5,11 +5,13 @@ from twscrape import API, gather
 from dotenv import load_dotenv
 import logging
 
-# Configura el logging para escribir en un archivo, además de configurar el nivel y formato de los mensajes
+project_root = Path(__file__).parent.parent.parent.absolute()
+
+# Configura el logging para escribir en un archivo en la raíz del proyecto
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
                     handlers=[
-                        logging.FileHandler("twitter_fetch.log"),  # Guarda logs en un archivo
+                        logging.FileHandler(project_root / "twitter_fetch.log"),  # Guarda logs en un archivo en la raíz
                         logging.StreamHandler()  # Imprime logs en la consola
                     ])
 
@@ -42,7 +44,7 @@ async def main():
     await api.pool.login_all()
     logging.info("Autenticación exitosa con la API.")
 
-    project_root = Path(__file__).parent.parent.parent.absolute()
+
     raw_data_directory = project_root / "data" / "raw"
 
     queries = [
