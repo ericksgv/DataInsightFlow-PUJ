@@ -44,7 +44,6 @@ async def main():
     await api.pool.login_all()
     logging.info("Autenticación exitosa con la API.")
 
-
     raw_data_directory = project_root / "data" / "raw"
 
     queries = [
