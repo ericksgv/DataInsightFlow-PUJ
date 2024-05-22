@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Aplicación para extraer y transformar datos",
+  "main": "extract_data.js",
+  "scripts": {
+    "start": "node extract_data.js && node transform_data.js"
+  },
+  "dependencies": {
+    "@threadsjs/threads.js": "^1.9.0",
+    "dotenv": "^10.0.0"
+  }
+}
