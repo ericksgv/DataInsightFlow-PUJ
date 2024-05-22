@@ -43,34 +43,20 @@ El proyecto utiliza variables de entorno para la configuración de la conexión 
 
 Variables requeridas:
 
-MONGO_HOST: La dirección IP o el nombre de host del servidor de MongoDB.
-MONGO_PORT: El puerto en el que MongoDB está escuchando las conexiones.
-MONGO_DB: El nombre de la base de datos MongoDB a la que se conectará la aplicación.
-MONGO_USER: El nombre de usuario para autenticarse en MongoDB.
-MONGO_PASS: La contraseña asociada al nombre de usuario para autenticarse en MongoDB.
-Otras variables opcionales:
-USUARIO: Tu nombre de usuario para la plataforma Threads.
-CONTRASENA: Tu contraseña para la plataforma Threads.
-PERFILTHREADS: El perfil de Threads del que se extraerán los posts.
-PUBLICACIONES_BUSCADAS: Lista separada por comas del enlace de la publicación
-PUBLICACION_ANALISIS: Enlace de la publicación a analizar
+  - MONGO_HOST: La dirección IP o el nombre de host del servidor de MongoDB.
+  - MONGO_PORT: El puerto en el que MongoDB está escuchando las conexiones.
+  - MONGO_DB: El nombre de la base de datos MongoDB a la que se conectará la aplicación.
+  - MONGO_USER: El nombre de usuario para autenticarse en MongoDB.
+  - MONGO_PASS: La contraseña asociada al nombre de usuario para autenticarse en MongoDB.
+  - USUARIO: Tu nombre de usuario para la plataforma Threads.
+  - CONTRASENA: Tu contraseña para la plataforma Threads.
+  - PERFILTHREADS: El perfil de Threads del que se extraerán los posts.
+  - PUBLICACIONES_BUSCADAS: Lista separada por comas del enlace de la publicación
+  - PUBLICACION_ANALISIS: Enlace de la publicación a analizar
 
 Configuración del archivo .env:
 Crea un archivo .env en la raíz del proyecto y define las variables de entorno necesarias según el ejemplo proporcionado en el archivo example.env. Asegúrate de reemplazar los valores de ejemplo con tus propias credenciales y configuraciones.
 
- 3. **Definir las variables de entorno**:
-  - Para configurar tu nombre de usuario, agrega la siguiente línea al archivo `.env` y reemplaza `tu_nombre_de_usuario` con tu nombre de usuario de Threads:
-    ```plaintext
-    USUARIO="tu_nombre_de_usuario"
-    ```
-  - Para configurar tu contraseña, agrega la siguiente línea al archivo `.env` y reemplaza `tu_contraseña` con tu contraseña de Threads:
-    ```plaintext
-    CONTRASENA="tu_contraseña"
-    ```
-   - Para configurar el perfil de Threads del que se extraerán los posts, agrega la siguiente línea al archivo `.env` y reemplaza `tu_perfil_de_threads` con el perfil de Threads que deseas utilizar:
-     ```plaintext
-     PERFILTHREADS="tu_perfil_de_threads"
-     ```
  4. Guarda los cambios realizados en el archivo `.env`.
  
 ## Uso 📦
