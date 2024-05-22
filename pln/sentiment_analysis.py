@@ -189,8 +189,6 @@ def main():
     objeto_publicacion = None
     comentarios, objeto_publicacion = extraer_descripciones_comentarios_por_enlace(db, enlace)
 
-    comentarios = comentarios[:5]
-
     # Limpieza de los comentarios
     comentarios = [limpiar_comentario(comentario) for comentario in comentarios]
     sentimientos = analisis_sentimientos(comentarios)
